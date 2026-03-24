@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+@media (width > 1200px) {
+    .cv{
+        width: 33%;
+    }
+    .formacion{
+        width: 33%;
+    }
+    .experiencia{
+        width: 33%;
+    }
+}
+
+@media (600px < width <= 1200px) {
+    .cv{
+        width: 40%;
+    }
+    .formacion{
+        width: 60%;
+    }
+    .experiencia{
+        width: 60%;
+    }
+}
+
+@media (width <= 600px) {
+    .cv{
+        width: 100%;
+    }
+    .formacion{
+        width: 100%;
+    }
+    .experiencia{
+        width: 100%;
+    }
+}

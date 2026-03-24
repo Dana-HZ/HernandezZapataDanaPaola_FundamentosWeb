@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bazar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo"><b>IM JUST A GIRL BAZAR</b></div>
+<nav>
+<a href="#" onclick="show('home'); return false;">HOME</a>
+<a href="#" onclick="show('catalog'); return false;">CATÁLOGO</a>
+<a href="#" onclick="goProfile(); return false;">PERFIL</a>
+<a href="#" onclick="goCart(); return false;">CARRITO</a>
+</nav>
+</header>
+
+<section id="home" class="active">
+<div class="hero">
+
+<div class="hero-text">
+<h1>Im just a <br><i>girl</i></h1>
+<div class="buttons">
+<button onclick="show('catalog')">DISPONIBLES</button>
+</div>
+</div>
+
+<div class="home-grid" id="homeCards"></div>
+
+</div>
+</section>
+
+<section id="catalog">
+<h2>Catálogo completo</h2>
+<div class="catalog-grid" id="allProducts"></div>
+</section>
+
+<section id="login">
+<div class="form">
+<h2>Iniciar Sesión</h2>
+<input id="loginEmail" placeholder="Correo">
+<input id="loginPass" type="password" placeholder="Contraseña">
+<button onclick="login()">Iniciar sesión</button>
+<p onclick="show('register')">¿No tienes cuenta? Regístrate</p>
+</div>
+</section>
+
+<section id="register">
+<div class="form">
+<h2>Registro</h2>
+<input id="regName" placeholder="Nombre">
+<input id="regEmail" placeholder="Correo">
+<input id="regPass" type="password" placeholder="Contraseña">
+<button onclick="register()">Crear cuenta</button>
+<p onclick="show('login')">¿Ya tienes cuenta? Inicia sesión</p>
+</div>
+</section>
+
+<section id="profile">
+<h2>Perfil</h2>
+<div id="userInfo"></div>
+<h3>Mis pedidos</h3>
+<div id="orders"></div>
+</section>
+
+<section id="cart">
+<h2>Carrito</h2>
+<div id="cartItems"></div>
+<h3 id="total"></h3>
+<button onclick="openCheckout()">Pagar</button>
+</section>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

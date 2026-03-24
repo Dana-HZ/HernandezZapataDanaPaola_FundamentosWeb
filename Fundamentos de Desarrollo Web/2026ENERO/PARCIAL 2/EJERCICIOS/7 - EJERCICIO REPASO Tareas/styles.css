@@ -1,0 +1,78 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.Titulo{ 
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ margin: 50px 0px;
+ gap: 10px;
+}
+
+.Titulo button{
+    width: 60px;
+   
+}
+
+
+input{
+    width: 200px;
+}
+
+.Tareas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+
+.Tarea{
+    width: 220px;
+    height: 60px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+   text-align: center;
+   align-items: center;
+   position: relative;
+}
+
+
+.Botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    left: -50px
+ 
+}
+
+.Completar{
+    border-radius: 5px;
+    width: 30px;
+   background-color: greenyellow;
+    height: 20px;
+   
+}
+
+.Eliminar {
+    border-radius: 5px;
+    width: 30px;
+    background-color: red;
+    height: 20px;
+}
+
+.Tarea_Completa {
+    background-color: lightgreen;
+}
